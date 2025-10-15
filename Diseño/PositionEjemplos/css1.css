@@ -1,0 +1,25 @@
+
+#wrapper {
+    position: absolute;
+    background-color: #FFF;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 10%;
+    border: 1px solid black;
+}
+
+/* without any position declaration */
+.box-orange {          
+    background: orange;
+    height: 100px;
+    width: 100px;       
+}
+
+.box-blue {
+    background: lightskyblue;
+    height: 100px;
+    width: 100px; 
+    position: static;   
+}

@@ -1,0 +1,76 @@
+.contactBody {
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.form {
+  box-shadow: 0px 0px 15px #332f2c;
+  border-radius: 15px;
+  width: 20em;
+  margin: auto;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.title {
+  font-size: 2em;
+  color: #332f2c;
+  text-align: center;
+}
+
+.entry {
+  width: 70%;
+  margin-top: 20px;
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: 0px 0px 10px #332f2c;
+  padding: 5px;
+}
+
+::placeholder {
+  color: white;
+  font-weight: bold;
+}
+
+.name.entry {
+  background-color: #e91e63;
+}
+
+.email.entry {
+  background-color: #7b1fa2;
+  padding-bottom: 25px;
+}
+
+.message.entry {
+  background-color: #ef6c00;
+  height: 7em;
+}
+
+.submit.entry {
+  background-color: #f48fb1;
+  margin-bottom: 20px;
+  width: 9em;
+  height: 2em;
+  margin: 0 auto;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  color: white;
+  font-weight: bold;
+}
+
+.name.entry:hover{
+  transition: 0.3s ease;
+  width: 85%;
+  height: 30px;
+}
+
+.email.entry:hover{
+  transition: 0.3s ease;
+  width: 85%;
+  height: 10px;
+}
+
+.message.entry:hover{
+  transition: 0.3s ease;
+  background-color: aqua;
+  width: 80%;
+}

@@ -1,0 +1,31 @@
+
+
+#wrapper {
+    position: absolute;
+    background-color: #FFF;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 10%;
+    border: 1px solid black;
+}
+
+.box-orange {
+    /* We are now ready to move the element */
+    position: relative;  
+    background: orange;
+    width: 20%;
+    height: 20%;
+    /* 100px from top relative to its old position */
+    top: 20%;         
+    /* 100px from left */
+    left: 20%;        
+}
+
+.box-blue {
+    background: lightskyblue;
+    height: 20%;
+    width: 20%; 
+    position: static;   
+}

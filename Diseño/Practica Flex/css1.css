@@ -1,0 +1,47 @@
+h1 {
+    font-family: Tahoma, Geneva, sans-serif;
+    text-align: center;
+    color: #000;
+    font-weight: normal;
+    padding: 10px;
+}
+
+.red {
+    background-color: #900;
+}
+
+.green {
+    background-color: #090;
+}
+
+.blue {
+    background-color: #00F;
+}
+
+.purple {
+    background-color: #63C;
+}
+
+.grey {
+    background-color: #666;
+}
+
+.container {
+    background-color: #FFF;
+    width: 50%;
+    height: 70%;
+    min-height: 400px;
+    margin: auto;
+    border: 2px solid black;
+}
+
+/* SOLUCIÓN */
+.container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    height: 10vw;
+}

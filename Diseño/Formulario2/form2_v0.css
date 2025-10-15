@@ -1,0 +1,77 @@
+body{
+  margin: 0;
+}
+.contactBody {
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+.form{
+  border: 1px solid #332f2c;
+  box-shadow: 5px 5px 20px #332f2c;
+  border-radius: 15px;
+  width: 200px;
+  height: 200px;
+}
+.title{
+  font-family: 'Montserrat';
+  font-size: 2em;
+  color: #332f2c;
+}
+
+input .name{
+  background-color: #e91e63;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.name.entry{
+  background-color: #e91e63;
+    color: white;
+    width: 40%;
+    box-shadow: 5px 5px 20px #332f2c;
+
+}
+.email.entry{
+  background-color: #7b1fa2;
+    color: white;
+    box-shadow: 5px 5px 20px #332f2c;
+
+}
+.message.entry{background-color: #ef6c00;
+  color: white;
+  box-shadow: 5px 5px 20px #332f2c;
+}
+.submit.entry{background-color: #f48fb1;
+  color: white;
+  box-shadow: 5px 5px 20px #332f2c;
+}
+
+
+
+li:hover{
+  background-color: #FAF8E1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

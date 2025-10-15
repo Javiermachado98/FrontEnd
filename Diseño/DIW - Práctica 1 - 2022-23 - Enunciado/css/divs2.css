@@ -1,0 +1,35 @@
+
+h1, h2 {
+	font-size: 12px;
+	color: #cb3719;
+	text-align: center;
+}
+
+h2 {
+	padding: 1%;
+}
+
+.galeria {
+    background-color: black;
+    margin: auto; 
+	border: 3px solid black;
+	outline: 5px solid #cb3719;
+}
+
+.uno {
+	/** A rellenar **/
+}
+
+.star {
+	/** A rellenar **/
+}
+
+.dos {
+	/** A rellenar **/
+}
+
+
+/** A rellenar **/
+/** Código restante para conseguir la disposición de la captura correspondiente **/ 
+
+

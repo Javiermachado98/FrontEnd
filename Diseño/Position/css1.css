@@ -1,0 +1,45 @@
+
+body {
+    font-weight: bold;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #FFF;
+    text-align: center;
+    line-height: 24px;
+}
+h1 {
+    color: #000;
+    font-weight: normal;
+    padding: 10px;
+}
+
+#wrapper {
+    position: absolute;
+    background-color: #FFF;
+    width: 50%;
+    height: 70%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 10%;
+    border: 2px solid black;
+}
+
+#red {
+    background-color: #900;
+}
+
+#green {
+    background-color: #090;
+}
+
+#blue {
+    background-color: #00F;
+}
+
+#purple {
+    background-color: #63C;
+}
+
+#footer {
+    background-color: #666;
+}
+

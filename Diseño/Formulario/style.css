@@ -1,0 +1,178 @@
+#contenedor {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+li {
+  border-top: 2px solid gray;
+  list-style-type: none;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  background-color: white;
+}
+li:hover{
+  background-color: #FAF8E1;
+}
+li, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.titulo {
+  float: left;
+  width: 20%;
+  font-weight: bold;
+  padding-top: 15px;
+  text-align: left;
+}
+
+.requerido{
+  color: red;
+}
+
+li div {
+  padding: 20px;
+  padding-top: 5px;
+  float: left;
+  width: 60%;
+  margin-left: -130px;
+}
+
+input {
+  width: 90%;
+  height: 25px;
+  margin-top: 10px;
+}
+
+#telefonofijo, #telefonomovil, #nombre {
+  width: 40%;
+}
+#email{
+  
+}
+label {
+  display: block;
+  padding-top: 4px;
+
+}
+
+.ayuda {
+  float: left;
+  width: 15%;
+}
+#alta{
+width: 15%;
+position: absolute;
+left: 85%;
+}
+#codigopostal, #provincia{
+  width: 25%;
+}
+/*#municipio, #pais{
+  width: 25%;
+  float: right;
+  left: 50%;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#hader {
+  font-size: 30px;
+}
+
+.ayuda {
+  font-size: 0px;
+}
+
+.titulo {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.requerido {
+  color: red;
+}
+
+input {
+  width: 400px;
+  padding: 10px;
+  display: flex;
+}
+
+h2 {
+  display: inline;
+}
+
+li {
+  border-bottom: 2px solid rgb(0, 0, 0);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style: none;
+}
+
+li:hover {
+  background-color: rgba(251, 255, 0, 0.548);
+}
+
+li:hover .ayuda {
+  font-size: 16px;
+  text-align: right;
+  position: relative;
+  bottom: 50px;
+}
+
+.titulo {
+  width: 30%;
+  display: block;
+}
+
+li div {
+  display: block;
+  width: 70;
+}
+
+li input {
+
+  
+}
+
+.botonDebajo{
+  width: 200px;
+  display: block;
+  margin-left: 75%;
+  font-size: 20px;
+}

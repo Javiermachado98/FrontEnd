@@ -1,0 +1,36 @@
+
+.container { 
+    position: relative;
+    background: lightgray;
+    width: 50%;
+    margin: 0 auto;
+    height: 1000px;
+}
+
+.container p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.box-orange {
+    background: orange;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 5px;
+}
+
+.box-blue {
+    background: lightblue;
+    width: 100px;
+    height: 100px;
+}
+
+.sticky {
+    position: sticky;
+    background: red;
+    top: 0;
+    padding: 10px;
+    color: white;
+}
+

@@ -1,0 +1,115 @@
+/*** CSS ***/
+body {
+	background-color: black;
+	font: 16px 'Lucida Grande',Tahoma,Verdana,sans-serif;
+  background-image: url(../img/mars.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+h1 {
+	font-size: 12px;
+	color: #cb3719;
+	text-align: center;
+	padding: 1%;
+}
+
+/*** CSS MENÚ ***/
+.menu {
+  font: 13px/20px 'Lucida Grande',Tahoma,Verdana,sans-serif;
+  color: #404040;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.nav {
+  height: 44px;
+  list-style:none;
+  padding: 0;
+}
+
+.active,.nav li {
+  float: left;
+  position: relative;
+  color: #ccc;
+  border: 1px solid #cb3719;
+  border-bottom-color: #cb3719;
+  background-image:-webkit-linear-gradient(top,rgba(255,255,255,.08),rgba(255,255,255,0));
+  background-image:-moz-linear-gradient(top,rgba(255,255,255,.08),rgba(255,255,255,0));
+  background-image:-o-linear-gradient(top,rgba(255,255,255,.08),rgba(255,255,255,0));
+  background-image:linear-gradient(to bottom,rgba(255,255,255,.08),rgba(255,255,255,0));
+  -webkit-box-shadow:inset 0 0 0 1px rgba(255,255,255,.05),0 2px #262a2e,0 3px #1f2326,0 4px 3px rgba(0,0,0,.2);
+  box-shadow: inset 0 0 0 1px #cb3719,0 2px #cb3719,0 3px #cb3719,0 4px 3px #cb3719;
+}
+
+.nav li:hover {
+  color:#cb3719;
+  text-shadow:0 1px black,0 0 20px rgba(255,255,255,.5)
+}
+
+.nav .active:active,.nav li.active,.nav li:active{
+  z-index:2;
+  margin:4px 0 0;
+  height:43px;
+  color:#aaa;
+  text-shadow:0 1px #000;
+  background-color:rgba(255,255,255,.03);
+  border-color:#212425;
+  background-image:-webkit-linear-gradient(top,rgba(0,0,0,.2),rgba(0,0,0,0));
+  background-image:-moz-linear-gradient(top,rgba(0,0,0,.2),rgba(0,0,0,0));
+  background-image:-o-linear-gradient(top,rgba(0,0,0,.2),rgba(0,0,0,0));
+  background-image:linear-gradient(to bottom,rgba(0,0,0,.2),rgba(0,0,0,0));
+  -webkit-box-shadow:inset 0 1px rgba(255,255,255,.05),inset 0 -1px 1px rgba(0,0,0,.15),1px 0 rgba(0,0,0,.05),-1px 0 rgba(0,0,0,.05),0 1px rgba(255,255,255,.05);
+  box-shadow:inset 0 1px rgba(255,255,255,.05),inset 0 -1px 1px rgba(0,0,0,.15),1px 0 rgba(0,0,0,.05),-1px 0 rgba(0,0,0,.05),0 1px rgba(255,255,255,.05)}
+
+.nav li a {
+  line-height: 44px;
+  padding:0 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: inherit;
+  text-decoration:none;
+}
+
+body#index .nav li:nth-child(1) {
+  background-color: #2b0303;
+}
+
+body#divs1 .nav li:nth-child(2) {
+  background-color: #2b0303;
+}
+
+body#divs2 .nav li:nth-child(3) {
+  background-color: #2b0303;
+}
+
+body#form .nav li:nth-child(4) {
+  background-color: #2b0303;
+}
+
+body#media .nav li:nth-child(5) {
+  background-color: #2b0303;
+}
+
+.lista {
+  width: 50vw;
+  margin: auto; 
+}
+
+.lista li {
+  color: #ccc;
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.lista img {
+  width: 40vw;
+  margin: 2.5vw;
+}
+
+div.container{
+  text-align: center;
+
+}
