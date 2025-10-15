@@ -39,23 +39,19 @@ h1 {
 .container {
     width: 50vw;
     display: flex;
-    flex-direction: row; /* Ponemos el row, para empezar a verlo como bloques */
+    flex-direction:row; /* Ponemos el row, para empezar a verlo como bloques */
     flex-wrap: wrap; /*El wrap nos permite modificarlo en base al width*/
     justify-content: center;
 }
 
 
 .item {
-    height: 20vh;
-    width: 30vw;
-    margin-bottom: 2vw;
+    width: 10vh;
+    height: 10vh;
 }
-
-.item:nth-child(2n){
-    width: 20vw;
-}
+/*
 .item.grey{
     width: 60%;
     justify-content: center;
 
-}
+}*/
