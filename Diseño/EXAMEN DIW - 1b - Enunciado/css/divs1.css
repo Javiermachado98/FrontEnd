@@ -1,0 +1,85 @@
+h1 {
+	font-size: 1.2em;
+	color: white;
+	text-align: center;
+	padding: 1%;
+}
+
+.uno {
+	background-color: #666666;
+}
+
+.dos {
+	background-color: #7c7c7c;
+}
+
+.tres {
+	background-color: #85b47a;
+}
+
+.cuatro {
+	background-color: #52b67e;
+}
+
+.cinco {
+	background-color: #067f79;
+}
+
+.seis {
+	background-color: #3d733c;
+}
+
+.container {
+	width: 70vw;
+	height: 70vh;
+	margin: auto;
+	outline: 3px solid #001c05;
+	position: relative;
+}
+
+body {
+	background-image: none;
+}
+
+.uno {
+	position: relative;
+	float: left;
+	width: 25%;
+	height: 30%;
+
+}
+
+.dos {
+	position: relative;
+	float: left;
+	width: 25%;
+	height: 30%;
+}
+
+.tres {
+	position: relative;
+	float: right;
+	width: 50%;
+	height: 50%;
+}
+
+.cuatro {
+	position: relative;
+	float: right;
+	width: 25%;
+	height: 70%;
+}
+
+.cinco {
+	position: relative;
+	float: left;
+	width: 25%;
+	height: 50%;
+
+}
+.seis {
+	position: relative;
+	float: left;
+	width: 25%;
+	height: 20%;
+}
