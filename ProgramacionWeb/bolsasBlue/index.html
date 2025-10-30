@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Producto Azul</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧪 Control de Producto Azul</h1>
+            <p>Gestión de bolsas para distribución en Alburquerque</p>
+        </div>
+
+        <form id="productForm" onsubmit="validateAll(); return false;">
+            <label for="fecha">Fecha de creación</label>
+            <input type="text" id="fecha" name="fecha" placeholder="dd/mm/aaaa">
+
+            <label for="cocinero">Cocinero (Nombre en clave)</label>
+            <input type="text" id="cocinero" name="cocinero" value="WW$1234">
+
+            <label for="destinatario">Destinatario</label>
+            <input type="text" id="destinatario" name="destinatario" value="NM_alburquerque:1234">
+
+            <label for="gramos">Gramos</label>
+            <input type="text" id="gramos" name="gramos" value="100-5000">
+
+            <label for="composicion">Composición</label>
+            <input type="text" id="composicion" name="composicion" value="200gC3AH7">
+
+            <label for="cuenta">Número de cuenta EEUU</label>
+            <input type="text" id="cuenta" name="cuenta" value="AB12-123456789012-0806">
+
+            <label for="cuentaFormateada">Cuenta sin guiones</label>
+            <input type="text" id="cuentaFormateada" name="cuentaFormateada" value="Se generará automáticamente"
+                readonly>
+
+            <button type="submit" class="btn-submit">➕ Registrar Bolsa</button>
+        </form>
+
+        <h2>📦 Registro de Bolsas (<span id="bagCount">0</span>)</h2>
+        <div id="bagsList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
