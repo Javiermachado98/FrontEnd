@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: #FFF;
+    margin: auto;
+    text-align: center;
+}
+.red {
+    background-color: #900;
+}
+.green{
+    background-color: #090;
+}
+.blue{
+    background-color: #00F;
+}
+.yellow{
+    background-color: #FF0;
+}
+
+.container{
+    background-color: grey;
+    width: 50vw;
+    height: 70%;
+    margin: auto;
+    min-height: 500px;
+    border: 10px solid black;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    height: 20vh;
+    width: 20vw;
+    margin-top: 2vw;
+}
+.submit{
+    background-color: white;
+    color: black;
+    width: 20%;
+    height: 40px;
+    display: block;
+    margin: auto;
+}
+
+

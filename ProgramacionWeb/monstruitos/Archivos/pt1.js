@@ -20,8 +20,6 @@ class Monstruo {
     edad(){
         let actualYear = new Date().getFullYear();
         let fechaNacimiento = Monstruo.bornDate.getFullYear();
-        let actualAge = 
-
     }
 
 }

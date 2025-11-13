@@ -1,0 +1,22 @@
+.colores{
+    border: 2px, solid black;
+    width: 50vw;
+    height: 10%;
+    margin: auto;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.pinturitas{
+    border: 2px, solid black;
+    width: 50vw;
+    height: 70%;
+    margin: auto;
+    min-height: 500px;
+    background-color: white;
+}
+
+td {
+    border: 1px solid black;
+    width: 30vw;
+    height: 5vh;
+}
