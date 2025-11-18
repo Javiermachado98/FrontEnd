@@ -3,8 +3,9 @@
     width: 50vw;
     height: 10%;
     margin: auto;
-    background-color: white;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
 }
 .pinturitas{
     border: 2px, solid black;
@@ -18,5 +19,29 @@
 td {
     border: 1px solid black;
     width: 30vw;
-    height: 5vh;
+    height: 4vh;
+}
+
+.item{
+    height: 10vh;
+    width: 10vw;
+}
+
+.yellow{
+    background-color: yellow;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.grey{
+    background-color: grey;
+}
+.white{
+    background-color: white;
 }

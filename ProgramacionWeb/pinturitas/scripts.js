@@ -1,15 +1,17 @@
 const nFilas = 20 // importante ya que es el limite
 const nCol = 20
+let orderStatus = false
+
 
 let pinturitas = document.getElementsByClassName('pinturitas')[0]
 let colores = ["yellow", "blue", "green", "red", "grey", "white"]
 
-let orderStatus = false
+// For sobre el htmlcollection getellñalskdlajsd('item')
+
 
 function startPrint(){
     orderStatus = !orderStatus
 }
-
 
 function paintColor(){
     if (orderStatus) {
