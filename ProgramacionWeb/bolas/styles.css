@@ -16,4 +16,5 @@ h1{
   background-color: blue;
   border-radius: 50%; 
   position: absolute;
+  border: 2px solid black;
 }
