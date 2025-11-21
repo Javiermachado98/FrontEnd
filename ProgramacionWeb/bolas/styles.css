@@ -1,0 +1,19 @@
+h1{
+    margin: 0 auto;
+    text-align: center;
+}
+.container{
+    position: relative;
+    border: 5px, solid black;
+    width: 50vw;
+    height: 70%;
+    margin: auto;
+    min-height: 500px;
+}
+.bola{
+  width: 10vmin;
+  height: 10vmin;
+  background-color: blue;
+  border-radius: 50%; 
+  position: absolute;
+}
