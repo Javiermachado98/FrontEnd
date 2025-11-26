@@ -61,7 +61,7 @@ function validateheight() {
 
 function validateComposition() {
     // let pattern = /^[0-9]+g[a-zA-Z]{1,2}[0-9]{0,1}[a-zA-Z]{1,2}[0-9]{0,1}$/;
-    let pattern = /^[0-9]+g([a-zA-Z]{1,2}[0-9]{0,1}){1,2}$/; // puede funcionar 1 o 2 veces y el + es 1 o muchos
+    let pattern = /^[0-9]+g([a-zA-Z]{1,2}[0-9]{0,1}){2}$/; // puede funcionar 1 o 2 veces y el + es 1 o muchos
     let composition = document.getElementById("composicion").value;
     if (composition === "") {
         console.log("La composicion no puede ir vacia");
