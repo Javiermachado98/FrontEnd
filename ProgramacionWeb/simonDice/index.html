@@ -8,13 +8,15 @@
 </head>
 <body>
     <h1>Simon Dice</h1>
-    <div class="container">
-        <div onclick ="gameCount()" class="item red"></div>
-        <div onclick ="gameCount()" class="item green"></div>
-        <div onclick ="gameCount()" class="item blue"></div>
-        <div onclick ="gameCount()" class="item yellow"></div>
+    <p id="nivel">Nivel: 0</p>
+    <div class="container" id="tablero">
+        <div id="red" class="item red"></div>
+        <div id="green" class="item green"></div>
+        <div id="blue" class="item blue"></div>
+        <div id="yellow" class="item yellow"></div>
     </div>
-    <button class = "submit" type="submit" onclick="starGame()">Inicir simon dice</button>    
+    <button class="submit" type="submit" onclick="iniciarJuego()">Iniciar Simon Dice</button>
+    <p id="mensaje"></p>
     <script src="script.js"></script>
 </body>
 </html>

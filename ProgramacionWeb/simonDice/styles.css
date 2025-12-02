@@ -7,16 +7,50 @@ h1{
     margin: auto;
     text-align: center;
 }
+
+#nivel{
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#mensaje{
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
 .red {
     background-color: #900;
 }
+
+.red.activo {
+    background-color: #F00;
+}
+
 .green{
     background-color: #090;
 }
+
+.green.activo{
+    background-color: #0F0;
+}
+
 .blue{
+    background-color: #009;
+}
+
+.blue.activo{
     background-color: #00F;
 }
+
 .yellow{
+    background-color: #990;
+}
+
+.yellow.activo{
     background-color: #FF0;
 }
 
@@ -40,7 +74,9 @@ h1{
     height: 20vh;
     width: 20vw;
     margin-top: 2vw;
+    cursor: pointer;
 }
+
 .submit{
     background-color: white;
     color: black;
@@ -48,6 +84,6 @@ h1{
     height: 40px;
     display: block;
     margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
 }
-
-
