@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranger Things: El Archivo de Hawkins</title>
+    <!-- Incluimos Tailwind CSS para una estructura y diseño rápidos y responsivos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración para la tipografía icónica de Stranger Things (custom font) -->
+    <link rel="stylesheet" href="demogordon.css" type="text/css" media="screen">
+    <script src="demogordon.js" defer></script>    
+    <script src="st.js" defer></script>
+</head>
+<body class="p-4 md:p-8">
+
+    <header class="mb-10">
+        <h1 class="st-title">STRANGER THINGS</h1>
+    </header>
+
+    <main class="st-container p-6 md:p-10 rounded-xl max-w-5xl w-full">
+        <h2 class="text-xl md:text-2xl font-bold mb-6 border-b border-red-st pb-2">
+            Archivo de Personajes de Hawkins y el Upside Down
+        </h2>
+
+        <!-- Contenedor para mostrar la lista de personajes -->
+        <div id="personajes-list" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Las tarjetas de personajes se renderizarán aquí -->
+            <div class="card-personaje p-4 rounded-lg">
+                <h4 class="text-lg">Eleven (Once)</h4>
+                <p><strong>Grupo:</strong> The Party</p>
+                <p><strong>Poder:</strong> Telequinesis</p>
+                <p class="text-sm mt-2">"Amigos no mienten."</p>
+            </div>
+            <div class="card-personaje p-4 rounded-lg">
+                <h4 class="text-lg">Mike Wheeler</h4>
+                <p><strong>Grupo:</strong> The Party</p>
+                <p><strong>Poder:</strong> Liderazgo</p>
+                <p class="text-sm mt-2">"Nunca te rindas, nunca te retires."</p>
+            </div>
+            <div class="card-criatura card-personaje p-4 rounded-lg">
+                <h4 class="text-lg">Demogorgon</h4>
+                <p><strong>Grupo:</strong> The Upside Down</p>
+                <p><strong>Poder:</strong> Acceso dimensional</p>
+                <p class="text-sm mt-2 italic text-gray-400">"El cazador que no tiene rostro."</p>
+            </div>
+        </div>
+
+        <div class="mt-8">
+            <h3 class="text-xl font-semibold mb-3">Consola de Diagnóstico JS</h3>
+            <p class="text-sm text-gray-400 mb-2">Aquí se ejecutará la lógica del examen (Clases y Arrays).</p>
+            <button id="ejecutar-js" class="bg-red-st hover:bg-red-700 text-white font-bold py-2 px-4 rounded transition duration-200">
+                Ejecutar Lógica del Examen
+            </button>
+            <pre id="output-terminal" class="rounded-lg shadow-2xl shadow-red-st/50"></pre>
+        </div>
+
+    </main>
+
+    <footer class="mt-8 text-center text-gray-400 text-sm">
+        <p>Práctica de Desarrollo Web en Entorno Cliente - Instituto de Hawkins</p>
+    </footer>
+</body>
+</html>

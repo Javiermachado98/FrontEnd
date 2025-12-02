@@ -1,0 +1,132 @@
+/* Definición de la fuente Stranger Things (una fuente similar para simular el estilo) */
+@font-face {
+    font-family: 'Stranger';
+    /* Usaremos una fuente genérica por restricciones, pero la definimos para el look */
+    src: local('Ariel'), local('Arial');
+}
+
+:root {
+    --red-st: #c30000;
+    --dark-st: #1a1a1a;
+    --shadow-red: rgba(195, 0, 0, 0.8);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--dark-st);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Fondo sutilmente oscuro y texturizado para simular el Upside Down */
+    background-image: radial-gradient(circle at 50% 120%, rgba(26, 26, 26, 0) 30%, rgba(0, 0, 0, 0.8) 100%),
+        url('https://placehold.co/1200x800/292929/1a1a1a?text=UpsideDown');
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+/* Estilo principal del título con efecto Neón */
+.st-title {
+    font-family: 'Stranger', monospace;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    text-shadow:
+        0 0 10px var(--shadow-red),
+        0 0 20px var(--shadow-red),
+        0 0 30px var(--shadow-red),
+        0 0 40px var(--red-st),
+        0 0 70px var(--red-st),
+        0 0 80px var(--red-st),
+        0 0 100px var(--red-st);
+    animation: flicker 1.5s infinite alternate;
+    padding-top: 10px;
+    letter-spacing: 0.2em;
+}
+
+/* Animación de parpadeo (flicker) para el neón */
+@keyframes flicker {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow:
+            0 0 4px var(--shadow-red),
+            0 0 11px var(--shadow-red),
+            0 0 19px var(--shadow-red),
+            0 0 40px var(--red-st),
+            0 0 80px var(--red-st),
+            0 0 90px var(--red-st),
+            0 0 100px var(--red-st),
+            0 0 150px var(--red-st);
+        opacity: 1;
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+        opacity: 0.8;
+    }
+}
+
+/* Contenedor principal para centrar la información */
+.st-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid var(--red-st);
+    box-shadow: 0 0 15px var(--red-st);
+}
+
+/* Estilo para las tarjetas de personajes */
+.card-personaje {
+    background-color: rgba(50, 50, 50, 0.7);
+    border-left: 5px solid var(--red-st);
+    transition: all 0.3s ease;
+}
+
+.card-personaje:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(195, 0, 0, 0.5);
+    background-color: rgba(70, 70, 70, 0.8);
+}
+
+.card-personaje h4 {
+    color: var(--red-st);
+    font-weight: 700;
+}
+
+/* Estilo específico para criaturas */
+.card-criatura {
+    border: 2px dashed #999;
+    border-left: 5px solid #00c3c3;
+    /* Color azul para el Upside Down */
+    box-shadow: 0 0 10px #00c3c3;
+}
+
+/* Estilo de terminal para la salida JS */
+#output-terminal {
+    background-color: #000;
+    border: 1px solid #0f0;
+    font-family: monospace;
+    padding: 15px;
+    white-space: pre-wrap;
+    height: 300px;
+    overflow-y: scroll;
+    margin-top: 20px;
+    color: #0f0;
+}
+
+/* Responsividad para el título */
+@media (max-width: 768px) {
+    .st-title {
+        font-size: 2.5rem;
+        letter-spacing: 0.1em;
+    }
+}
