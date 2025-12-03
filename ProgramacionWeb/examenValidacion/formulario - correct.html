@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="form.js"></script>
+    <link rel="stylesheet" href="formulario.css" type="text/css" media="screen">
+    <script src="formulario.js"></script>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="table-responsive">
+            <h3>Café y más café...</h3><br />
+            <div class="box">
+                <form id="validate_form" action="" onSubmit="sendForm(); return false">
+                    <div class="form-group">
+                        <label for="email">Fecha de tostado</label>
+                        <input type="text" name="fecha" id="fecha" class="form-control" value="2024/11/26" />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Maestro tostador</label>
+                        <input type="text" name="maestro" id="maestro" class="form-control" value="Javier" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Origen del grano</label>
+                        <input type="text" name="origen" id="origen" class="form-control" value="col-ANTIOQUIA.1234" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Peso neto del lote</label>
+                        <input type="text" name="peso" id="peso" class="form-control" value="5500" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Notas de cata</label>
+                        <input type="text" name="cata" id="cata" class="form-control" value="099AC6" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Número de lote</label>
+                        <input type="text" name="lote" id="lote" class="form-control" value="AB22-1234567" />
+                    </div>
+                    <div class="form-group" id="enviado">
+                        <input type="submit" id="submit" name="submit" value="Enviar" onclick="validar()" class="btn btn-success" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br />
+        <h4>Requisitos</h4>
+        <p>Una tostadora de café de especialidad necesita implementar un sistema para registrar y validar la información de cada lote de café tostado antes de su distribución.</p>
+        <p>Debes crear las expresiones regulares para validar los siguientes campos:</p>
+        <ul>
+            <li>
+                Fecha de tostado: Obligatorio. Formato: aaaa/mm/dd, no se puede guardar café tostado antes del 2010, y la fecha de tostado será anterior al 2026.
+            </li>
+            <li>
+                Maestro tostador: Formado por una letra mayúscula y un máximo de 10 letras más.
+            </li>
+            <li>
+                Origen del grano: Estará formado por dos o tres letras minúsculas para el país, un guión (-), el nombre de la región en mayúsculas, un punto (.), y el código de altitud de 3 o 4 dígitos
+            </li>
+            <li>
+                Peso neto del lote: Debe ser un número entre 1000 y 10000 (kilogramos)
+            </li>
+            <li>
+                Notas de cata: Una descripción formada por una cantidad de tres dígitos seguida de las iniciales de la nota de cata (dos letras mayúsculas), seguida de un nivel de intensidad (un dígito del 1 al 9)
+            </li>
+            <li>
+                Número de lote: número de registro de 14 caracteres con formato específico, dos mayúsculas, seguidas o no de un dígito o dos, un guión y 7 números más.
+            </li>
+            <li>
+                El botón "Aceptar... " simplemente tienes que enviar, la lógica ya está programada.
+            </li>
+        </ul>
+        <br /><br /><br />
+
+    </div>
+</body>
+
+</html>

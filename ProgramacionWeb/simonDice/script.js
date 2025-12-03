@@ -65,7 +65,7 @@ function capturarClic() {
     
     let elemento = event.target
     
-    if (elemento.classList.contains('item')) {
+    if (elemento.classList.contains('mb-6')) {
         let colorClicado = elemento.id
         respuestaJugador.push(colorClicado)
         flash(colorClicado)

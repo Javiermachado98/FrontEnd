@@ -1,0 +1,197 @@
+/* Variables de Color */
+:root {
+    --color-primary: #8B4513; /* Marrón Cacao */
+    --color-secondary: #D2B48C; /* Tostado Claro */
+    --color-accent: #E9967A; /* Dorado Suave */
+    --color-text: #333;
+    --color-background: #FAF0E6; /* Crema de Fondo */
+}
+
+.prueba{
+    background-color: #8B4513;
+}
+
+
+/* Estilos Generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header y Navegación */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 1.8em;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-text);
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--color-accent);
+}
+
+/* Sección Hero (Banner Principal) */
+#hero {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-secondary);
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><rect width="100%" height="100%" fill="rgb(210, 180, 140, 0.7)"/></svg>'); /* Placeholder visual */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px;
+}
+
+.hero-content {
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+#hero p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+    /* Degradado sutil */
+    background: linear-gradient(145deg, var(--color-accent), #c27d63);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Sección Productos Destacados */
+#productos h3 {
+    text-align: center;
+    font-size: 2em;
+    color: var(--color-primary);
+    margin-bottom: 30px;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.producto-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    /* Sombra suave */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.producto-card h4 {
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.producto-card .precio {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--color-accent);
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: var(--color-primary);
+    color: white;
+    font-size: 0.9em;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+footer a {
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+/* Media Queries (Responsividad) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    .productos-grid {
+        /* En pantallas pequeñas, grid queda en una sola columna */
+        grid-template-columns: 1fr;
+    }
+}
