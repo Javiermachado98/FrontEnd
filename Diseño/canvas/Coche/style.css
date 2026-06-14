@@ -1,0 +1,16 @@
+/* Centramos el canvas para que se vea bien en cualquier pantalla */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* Le damos un borde y una sombra al lienzo tipo cuadro */
+canvas {
+    border: 4px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background-color: white;
+}
