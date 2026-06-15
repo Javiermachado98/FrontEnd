@@ -1,0 +1,35 @@
+<div style="max-width: 400px; margin: 50px auto; padding: 25px; border: 1px solid #ccc; border-radius: 6px; font-family: Arial, sans-serif;">
+  <h2 style="color: #2c3e50; margin-bottom: 20px; text-align: center;">
+    {{ isEditing ? '✏️ Formulario de Modificación' : '➕ Registrar Nuevo Libro' }}
+  </h2>
+
+  <div style="margin-bottom: 12px;">
+    <label style="display: block; margin-bottom: 4px; font-weight: bold;">Código del Libro:</label>
+    <input [(ngModel)]="selected().code" [disabled]="isEditing" type="text" style="width: 100%; padding: 8px;">
+  </div>
+
+  <div style="margin-bottom: 12px;">
+    <label style="display: block; margin-bottom: 4px; font-weight: bold;">Título:</label>
+    <input [(ngModel)]="selected().title" type="text" style="width: 100%; padding: 8px;">
+  </div>
+
+  <div style="margin-bottom: 12px;">
+    <label style="display: block; margin-bottom: 4px; font-weight: bold;">Autor:</label>
+    <input [(ngModel)]="selected().author" type="text" style="width: 100%; padding: 8px;">
+  </div>
+
+  <div style="margin-bottom: 20px;">
+    <label style="display: block; margin-bottom: 4px; font-weight: bold;">Precio (€):</label>
+    <input [(ngModel)]="selected().price" type="number" style="width: 100%; padding: 8px;">
+  </div>
+
+  @if (isEditing) {
+    <button (click)="updateBook()" style="width: 100%; padding: 10px; background-color: #f39c12; color: white; border: none; font-weight: bold; cursor: pointer;">
+      Sincronizar Cambios (Modificar)
+    </button>
+  } @else {
+    <button (click)="Createbook()" style="width: 100%; padding: 10px; background-color: #2ecc71; color: white; border: none; font-weight: bold; cursor: pointer;">
+      Dar de Alta en Base de Datos
+    </button>
+  }
+</div>

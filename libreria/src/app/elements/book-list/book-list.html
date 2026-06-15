@@ -1,0 +1,40 @@
+<div style="padding: 30px; font-family: Arial, sans-serif;">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+    <h2 style="color: #2c3e50; margin: 0;">📚 Panel de Gestión de la Librería</h2>
+    <button (click)="goToCreate()" style="background-color: #2ecc71; color: white; padding: 10px 15px; border: none; font-weight: bold; cursor: pointer; border-radius: 4px;">
+      ➕ Añadir Nuevo Libro
+    </button>
+  </div>
+
+  <table style="width: 100%; border-collapse: collapse; margin-top: 10px; text-align: left;">
+    <thead>
+      <tr style="background-color: #34495e; color: white;">
+        <th style="padding: 12px; border: 1px solid #ddd;">Código</th>
+        <th style="padding: 12px; border: 1px solid #ddd;">Título</th>
+        <th style="padding: 12px; border: 1px solid #ddd;">Autor</th>
+        <th style="padding: 12px; border: 1px solid #ddd;">Precio</th>
+        <th style="padding: 12px; border: 1px solid #ddd; text-align: center;">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (book of books(); track book.code) {
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td style="padding: 12px; font-weight: bold; color: #34495e;">{{ book.code }}</td>
+          <td style="padding: 12px;">{{ book.title }}</td>
+          <td style="padding: 12px; font-style: italic;">{{ book.author }}</td>
+          <td style="padding: 12px; font-weight: bold; color: #e74c3c;">{{ book.price }} €</td>
+          <td style="padding: 12px; text-align: center;">
+            <button (click)="selectToEdit(book)" style="background-color: #f39c12; color: white; padding: 6px 12px; border: none; margin-right: 8px; cursor: pointer; border-radius: 4px;">✏️ Editar</button>
+            <button (click)="deleteBook(book.code)" style="background-color: #e74c3c; color: white; padding: 6px 12px; border: none; cursor: pointer; border-radius: 4px;">🗑️ Eliminar</button>
+          </td>
+        </tr>
+      } @empty {
+        <tr>
+          <td colspan="5" style="text-align: center; padding: 30px; color: #7f8c8d; font-size: 1.1rem;">
+            ⌛ Conectando al servidor PHP de XAMPP o base de datos vacía...
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

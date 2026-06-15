@@ -1,0 +1,31 @@
+<div class="login-wrapper">
+  <div class="glass-card">
+    <div class="login-header">
+      <span class="icon-space">🚀</span>
+      <h2>Terminal de Acceso</h2>
+      <p>Identifícate para iniciar la misión</p>
+    </div>
+
+    <div class="login-body">
+      <div class="input-group">
+        <input [(ngModel)]="username" type="text" id="user" placeholder=" " required autocomplete="off">
+        <label for="user">Identificador (Usuario)</label>
+      </div>
+
+      <div class="input-group">
+        <input [(ngModel)]="password" type="password" id="pass" placeholder=" " required>
+        <label for="pass">Código de Acceso (Contraseña)</label>
+      </div>
+
+      <button class="btn-neon" (click)="onLogin()">
+        Autorizar Acceso <span class="arrow">&#10140;</span>
+      </button>
+
+      @if (errorMessage()) {
+        <div class="error-alert shake-animation">
+          <span class="alert-icon">⚠️</span> {{ errorMessage() }}
+        </div>
+      }
+    </div>
+  </div>
+</div>

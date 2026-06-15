@@ -1,0 +1,41 @@
+<div class="contact-container">
+  <section class="glass-card">
+    <div class="card-header">
+      <span class="badge">SISTEMA DE COMUNICACIÓN CUÁNTICA</span>
+      <h2>Contactar con la Agencia</h2>
+    </div>
+
+    <form class="space-form" [formGroup]="contactForm" (ngSubmit)="sendSignal()">
+      
+      <div class="input-group">
+        <label>Identificador de Piloto</label>
+        <input type="text" formControlName="pilotName" placeholder="Ej: Commander Shepard">
+        @if (contactForm.get('pilotName')?.touched && contactForm.get('pilotName')?.invalid) {
+          <span class="error-msg">Identificador requerido (mín. 3 caracteres).</span>
+        }
+      </div>
+
+      <div class="input-group">
+        <label>Frecuencia de Radio (100-900 MHz)</label>
+        <input type="number" formControlName="frequency" placeholder="Ej: 440">
+        
+        @if (contactForm.get('frequency')?.touched && contactForm.get('frequency')?.invalid) {
+          <span class="error-msg">
+            @if (contactForm.get('frequency')?.errors?.['required']) { Frecuencia necesaria. }
+            @else { Rango inválido: Debe estar entre 100 y 900 MHz. }
+          </span>
+        }
+      </div>
+
+      <div class="input-group">
+        <label>Transmisión de Datos</label>
+        <textarea rows="4" formControlName="transmission" placeholder="Escribe tu mensaje aquí..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-send" [disabled]="contactForm.invalid">
+        <span>ENVIAR SEÑAL</span>
+        <div class="shimmer"></div>
+      </button>
+    </form>
+  </section>
+</div>

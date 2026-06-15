@@ -1,0 +1,19 @@
+<div class="space-app-container">
+  <div class="stars-bg"></div>
+
+  <header class="glass-navbar">
+    <div class="logo">
+      <span class="icon">🌌</span>
+      <h1>{{ title() }}</h1>
+    </div>
+    
+    <nav>
+      <a routerLink="/contact" class="btn-login" routerLinkActive="active-link">Agencia</a>      
+      <a routerLink="/planets" class="btn-login" routerLinkActive="active-link">Planetas</a>
+    </nav>
+  </header>
+
+  <main class="content-viewport">
+    <router-outlet></router-outlet>
+  </main>
+</div>

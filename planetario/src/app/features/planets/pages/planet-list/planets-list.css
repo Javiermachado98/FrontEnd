@@ -1,0 +1,74 @@
+/* --- Contenedor Principal (Ahora más ancho) --- */
+.planet-dashboard {
+  width: 95%; /* Ocupa casi toda la pantalla */
+  max-width: 1300px; /* Límite mucho más amplio */
+  margin: 0 auto;
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ... (La cabecera se queda igual) ... */
+
+/* --- Contenedor de la Tabla (Cristal reforzado) --- */
+.table-container {
+  overflow-x: auto;
+}
+
+.glass-panel {
+  background: rgba(15, 20, 35, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  /* Borde más definido y resplandor interior para darle profundidad */
+  border: 1px solid rgba(0, 240, 255, 0.3); 
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(0, 240, 255, 0.05);
+  padding: 2rem; /* Más espacio respirable alrededor de la tabla */
+}
+
+/* --- Estilos de la Tabla (Más aire y bordes) --- */
+.planet-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  color: #e0e6ed;
+}
+
+/* Cabecera de la tabla */
+.planet-table th {
+  padding: 1.5rem 2rem; /* Más altura y anchura en las celdas */
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #00f0ff;
+  border-bottom: 2px solid rgba(0, 240, 255, 0.3); /* Línea inferior más fuerte */
+  background: rgba(0, 240, 255, 0.05);
+}
+
+/* Filas y Celdas */
+.planet-table td {
+  padding: 1.5rem 2rem; /* Celdas mucho más amplias */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  vertical-align: middle;
+  transition: background 0.2s ease;
+}
+
+/* BORDES VERTICALES: Separadores entre columnas (menos en la última) */
+.planet-table th:not(:last-child),
+.planet-table td:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Efecto Hover en las filas (ilumina toda la fila) */
+.planet-row:hover td {
+  background: rgba(0, 240, 255, 0.08);
+  cursor: default;
+}
+
+/* Quitar el borde inferior de la última fila */
+.planet-row:last-child td {
+  border-bottom: none;
+}

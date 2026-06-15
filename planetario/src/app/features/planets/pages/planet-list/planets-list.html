@@ -1,0 +1,47 @@
+<div class="planet-dashboard">
+  <div class="dashboard-header">
+    <span class="icon-radar">📡</span>
+    <h2>Base de Datos Planetaria</h2>
+    <p>Sistemas escaneados en el sector local</p>
+    <button (click)="logout()" class="btn-login">Desconectar</button>
+  </div>
+
+  <div class="table-container glass-panel">
+    <table class="planet-table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Clasificación</th>
+          <th>Distancia al Sol</th>
+          <th>Sistema de Anillos</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        @for (planet of planetService.planets(); track planet.id) {
+          <tr class="planet-row">
+            <td class="name-cell">
+              {{ planet.name }}
+            </td>
+            <td>
+              <span class="badge">{{ planet.type }}</span>
+            </td>
+            <td class="distance-cell">
+              {{ planet.distanceFromSunMm }} M km
+            </td>
+            <td [class.neon-text]="planet.hasRings">
+              {{ planet.hasRings ? 'Detectados' : 'Ninguno' }}
+            </td>
+          </tr>
+        } @empty {
+          <tr>
+            <td colspan="5" class="empty-state">
+              <span class="spin-icon">⌛</span>
+              <p>Estableciendo conexión con la red satelital... recibiendo datos.</p>
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>
